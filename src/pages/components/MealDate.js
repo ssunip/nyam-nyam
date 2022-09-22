@@ -18,7 +18,7 @@ const MealDate = () => {
   weekday[6] = "토";
 
   return (
-    <div className="MealDate">
+    <div className="meal-date">
       <div className="today">{`${today.year}년 ${today.month}월 ${
         today.date
       }일 (${weekday[today.day]})`}</div>

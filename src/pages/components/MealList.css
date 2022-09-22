@@ -1,0 +1,44 @@
+.meal-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.meal-info {
+  width: 160px;
+  margin: 1rem;
+  font-weight: 600;
+}
+
+.meal-type {
+  font-size: 16px;
+}
+
+.meal-time, .meal-amount {
+  display: inline-block;
+  margin: 1rem 0 1rem;
+  font-size: 12px;
+  color: rgb(181, 181, 181);
+}
+
+.meal-memo {
+  font-size: 12px;
+  color: rgb(181, 181, 181);
+}
+
+.meal-kcal {
+  margin: 1rem 0 1rem;
+  font-size: 12px;
+}
+
+.list-add__btn {
+  font-size: 20px;
+  color: rgb(181, 181, 181);
+}
