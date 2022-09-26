@@ -1,7 +1,7 @@
 import React from "react";
 
-const MealAdd = () => {
+function MealAdd() {
   return <div>MealAdd</div>;
-};
+}
 
 export default MealAdd;

@@ -1,19 +1,18 @@
 import "./App.css";
-import MealDate from "./pages/components/MealDate";
-import MealList from "./pages/components/MealList";
-import Footer from "./pages/components/Footer";
+import MealAdd from "./pages/MealAdd";
+import MealMain from "./pages/MealMain";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <MealDate></MealDate>
-      <ul className="mealList">
-        <MealList className="meal"></MealList>
-        <MealList className="meal"></MealList>
-        <MealList className="meal"></MealList>
-      </ul>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<MealMain />} />
+          <Route path="/addmeal" element={<MealAdd />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

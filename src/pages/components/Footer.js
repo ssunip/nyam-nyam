@@ -1,11 +1,14 @@
 import React from "react";
 import "./Footer.css";
 import { IoAddCircleOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
-const Footer = () => {
+const Footer = ({ onAddModal }) => {
   return (
     <div className="Footer">
-      <IoAddCircleOutline className="add-btn" />
+      <Link to="/addmeal">
+        <IoAddCircleOutline className="add-btn" onClick={onAddModal} />
+      </Link>
     </div>
   );
 };
