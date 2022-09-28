@@ -1,5 +1,6 @@
 .MealAdd {
   padding: 0.8rem;
+  height: 700px;
   flex-direction: column;
   position: relative;
 }
@@ -24,8 +25,14 @@
 }
 
 .meal__add {
-  padding: 1.5rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
   overflow-y: auto;
+  height: 250px;
+}
+
+.meal__add::-webkit-scrollbar {
+  display: none;
 }
 
 div {
@@ -43,6 +50,10 @@ span {
   margin-bottom: 8px;
   width: 350px;
   height: 50px;
+}
+
+.insert:last-child {
+  margin-bottom: 0.5rem;
 }
 
 .meal-tag {
@@ -65,14 +76,21 @@ span {
 }
 
 .meal-input {
+  margin-top: 0.3rem;
   display: block;
   width: 100%;
+  height: 2rem;
   border: none;
+}
+
+input::placeholder {
+  color: rgb(181, 181, 181);
+  font-weight: 700;
 }
 
 button {
   position: absolute;
-  bottom: 25px;
+  bottom: 20px;
   width: 350px;
   height: 40px;
   border-radius: 10px;
