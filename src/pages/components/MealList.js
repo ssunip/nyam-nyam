@@ -3,7 +3,7 @@ import { BiDotsVertical } from "react-icons/bi";
 
 const Meal = ({ mealLists }) => {
   return (
-    <div className="meal-list">
+    <div className="MealList">
       <img src={mealLists[0].img} className="photo" alt="음식사진" />
       <div className="meal-info">
         <div className="meal-type">{mealLists[0].type}</div>
